@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            
+        }
+        .one{
+            background-color: aqua;
+           
+        }
+        .two{
+            background-color: rgb(234, 105, 144);
+            
+        }
+        /* animal cards */
+        body{
+            padding-bottom: 300px;
+        }
+        .main-container{
+            margin-top: 30px; 
+            display: grid; 
+            grid-template-columns:  200px 200px 200px;
+            column-gap: 20px;
+            font-family: Segoe UI;
+        }
+        .card-1{
+            box-shadow: 0px 0px 7px rgba(0, 0, 0,0.5);
+        }
+        .dog-image{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            margin-bottom: 8px;
+        }
+        .sub-div{
+            display: grid;
+            grid-template-columns: 40px 1fr; 
+        }
+        .dog-name{
+            margin: auto;
+            margin-left: 8px;
+            margin-bottom: 5px;
+            font-weight: bold
+        } 
+        .profile-image{
+            height: 30px;
+            width: 30px;
+            border-radius: 15px;
+            margin-left: 8px;
+            object-fit: cover;
+            
+        }
+        .mu-friend{
+            margin: auto;
+            margin-left: 4px;
+            color: rgb(100, 98, 98);
+            vertical-align: middle; 
+        }
+        .add-Friend-btn{
+            background-color: rgb(25, 133, 248);
+            border: none;
+            padding: 8px 15px  8px 15px;
+            color: white;
+            border-radius: 4px;
+            margin: 9px 0px 8px 8px;
+            font-family: Verdana;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="parent">
+        <div class="one">div 1</div>
+    <div class="two">div 2</div>
+    </div> -->
+
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr;">
+    <div style="width: 300px; height: 70px; display: grid; 
+    grid-template-columns: 50px 1fr;">
+        <div class="one">div 1</div>
+        <div class="two">div 2</div>
+        <!-- <div style="background-color: rgb(191, 147, 233);"></div> -->
+    </div>
+
+    <div style="width: 300px; height: 70px; display: grid; 
+    grid-template-columns: 50px 1fr ;">
+        <div class="one">div 1</div>
+        <div class="two">div 2</div>
+        <!-- <div style="background-color: rgb(191, 147, 233);"></div> -->
+    </div>
+
+    <div style="width: 300px; height: 70px display: grid; 
+    grid-template-columns: 50px 1fr ;">
+        <div class="one">div 1</div>
+        <div class="two">div 2</div>
+        <!-- <div style="background-color: rgb(191, 147, 233);"></div> -->
+    </div>
+    <div style="width: 300px; height: 70px; display: grid; 
+    grid-template-columns: 50px 1fr;">
+        <div class="one">div 1</div>
+        <div class="two">div 2</div>
+        <!-- <div style="background-color: rgb(191, 147, 233);"></div> -->
+    </div>
+
+    <div style="width: 300px; height: 70px; display: grid; 
+    grid-template-columns: 50px 1fr ;">
+        <div class="one">div 1</div>
+        <div class="two">div 2</div>
+        <!-- <div style="background-color: rgb(191, 147, 233);"></div> -->
+    </div>
+
+    <div style="width: 300px; height: 70px;  display: grid; 
+    grid-template-columns: 50px 1fr ;">
+        <div class="one">div 1</div>
+        <div class="two">div 2</div>
+        <!-- <div style="background-color: rgb(191, 147, 233);"></div> -->
+    </div>
+</div> 
+
+
+<div class="parent" style="margin-top: 30px; display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px; row-gap:30px;">
+        <div class="one" style="height: 200px;"> 1 fr</div>
+        <div class="two" style="height: 200px;"> 1 fr</div>
+        <div class="one" style="height: 200px;"> 1 fr</div>
+        <div class="two" style="height: 200px;"> 1 fr</div>
+        <div class="one" style="height: 200px;"> 1 fr</div>
+        <div class="two" style="height: 200px;"> 1 fr</div>
+</div>
+<div style="margin-top: 30px; display: grid; 
+grid-template-columns: 1fr 1fr 1fr 1fr;
+column-gap: 20px; row-gap:10px;">
+    <div class="one">50px </div>
+    <div class="two">1fr</div>
+    <div class="one">75px</div>
+    <div class="two">1fr</div>
+    <div class="one">75px</div>
+    <div class="two">1fr</div>
+    <div class="one">75px</div>
+    <div class="two">1fr</div>
+</div>
+
+
+<div class="main-container">
+    <div class="card-1">
+        <div class="img-div">
+            <img  class="dog-image" src="./kitten-2354016_1280.jpg" alt="">
+        </div>
+        <div class="profile-info">
+            <p class="dog-name">Oliver</p>
+            <div class="sub-div">
+                <img class="profile-image" src="./OIP (1).jpeg" alt="">
+                <p class="mu-friend">2 mutual friends</p>
+            </div>
+            <div>
+                <button class="add-Friend-btn">Add Friend</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-1">
+        <div class="img-div">
+            <img  class="dog-image" src="./OIP (1).jpeg" alt="">
+        </div>
+        <div class="profile-info">
+            <p class="dog-name">Mimi</p>
+            <div class="sub-div">
+                <img class="profile-image" src="./kitten-2354016_1280.jpg" alt="">
+                <p class="mu-friend">3 mutual friends</p>
+            </div>
+            <div>
+                <button class="add-Friend-btn">Add Friend</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-1">
+        <div class="img-div">
+            <img  class="dog-image" src="./OIP (1).jpeg" alt="">
+        </div>
+        <div class="profile-info">
+            <p class="dog-name">Rex</p>
+            <div class="sub-div">
+                <img class="profile-image" src="./kitten-2354016_1280.jpg" alt="">
+                <p class="mu-friend">4 mutual friends</p>
+            </div>
+            <div>
+                <button class="add-Friend-btn">Add Friend</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
